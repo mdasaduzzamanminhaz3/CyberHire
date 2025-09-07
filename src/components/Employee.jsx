@@ -16,7 +16,7 @@ const Employee = () => {
     const totalCost = cart.reduce((sum,expert) => sum + expert.salary,0);
 
   useEffect(() => {
-    fetch('/experts.JSON')
+    fetch('/experts.json')
     .then(res => res.json())
     .then(data => {setExperts(data);
         console.log(data);
